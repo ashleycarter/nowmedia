@@ -1,0 +1,55 @@
+// Sign up form
+
+.home-newsletter-cta {
+	margin: 0;
+}
+
+.home-newsletter-cta-blurb {
+	margin: 10px;
+}
+
+.home-page-contact-form {
+	textarea {
+		display: none;
+	}
+	input.et_pb_contact_name {
+		display: none;
+	}
+	.et_pb_contact_left p:last-child {
+		width: 65%;
+		@media screen and (max-width: 980px) {
+			width: 100%;
+		}
+	}
+	input.et_pb_contact_submit {
+		float: right;
+		margin-top: -70px;
+		@media screen and (max-width: 980px) {
+			margin-top: 8px;
+		}
+	}
+	.et_pb_contact_right {
+		margin-top: -70px;
+		margin-right: 120px;
+		@media screen and (max-width: 980px) {
+			margin: 8px 15px 0 0;
+		}
+	}
+	form {
+		width: 70%;
+		margin: 0 auto;
+	}
+}
+
+.contact-form {
+	padding: 0;
+	@media screen and (max-width: 980px) {
+		margin-top: 10px;
+	}
+	div.et_pb_row:nth-of-type(2) {
+		padding-top: 60px;
+	}
+	div#et_pb_contact_form_1 {
+		padding-bottom: 0;
+	}
+}

@@ -1,0 +1,81 @@
+div.et_pb_section_video_bg {
+  opacity: 0.6; 
+}
+
+.hero-image {
+  padding: 60px 0 80px !important;
+}
+
+.hero-image:after {
+  background: url(http://staging.niomedia.com/wp-content/uploads/2014/12/pattern.png) center center repeat;
+  min-width: 100%;
+  content: '';
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute; 
+}
+
+.hero-image {
+  div.et_pb_row {
+    z-index: 9999;
+  }
+
+  .et_pb_text p:last-of-type {
+    margin-top: 40px; 
+  }
+
+  a span.arrow-down {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 7px 7px 0 7px;
+    margin: 0 auto;
+    border-color: #ffffff transparent transparent transparent;
+    line-height: 0px;
+    border-color: #ffffff #000000 #000000 #000000;
+    filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');
+    display: inline-block;
+    margin-left: 15px; 
+  }
+
+  p {
+    font-size: 1.35em;
+  }
+} 
+
+.text-overlay {
+  padding-bottom: 100px;
+  width: 75%;
+  margin: 0 auto;
+  font-size: 13pt;
+  text-shadow: 1px 1px 1px black; 
+
+  p:first-of-type {
+    margin-top: 30px;
+  }
+
+  a {
+    color: white;
+    border: 1px solid white;
+    margin-top: 30px;
+    padding: 1em 2.5em;
+    transition: background-color 0.5s, color 0.5s, text-shadow 0.5s;
+    -webkit-transition: background-color 0.5s, color 0.5s, text-shadow 0.5s;
+    -moz-transition: background-color 0.5s, color 0.5s, text-shadow 0.5s; 
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.3);
+      transition: background-color 0.5s, color 0.5s, text-shadow 0.5s;
+      -webkit-transition: background-color 0.5s, color 0.5s, text-shadow 0.5s;
+      -moz-transition: background-color 0.5s, color 0.5s, text-shadow 0.5s;      
+    }
+  }
+}
+
+
+
+
+
+

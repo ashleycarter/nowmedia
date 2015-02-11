@@ -1,0 +1,15 @@
+.et_fixed_nav #page-container {
+  padding-top: 0px; 
+}
+
+.hero-image div.mejs-container {
+	@media screen and (max-width: 767px) {
+		display: none;
+	}
+}
+
+.hero-image {
+	@media screen and (max-width: 767px) {
+		background-image: url('http://staging.niomedia.com/wp-content/uploads/2015/01/static-mobile-hero.jpg') !important;
+	}
+}
