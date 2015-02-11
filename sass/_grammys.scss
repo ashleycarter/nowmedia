@@ -1,32 +1,8 @@
 // Variables
-$favorite-color     : #F7931D;
-$twitter-color      : #00B6F1;
-$facebook-color     : #3B5999;
-$google-plus-color  : #DF4A32;
-$instagram-color    : #246B91;
-$email-color        : #64479D;
-
-$header-black       : #2f2f2f;
-$body-black         : #666666;
-$grammys-gold       : #ddb374;
+$grammys-header-black : #2f2f2f;
+$grammys-gold         : #ddb374;
 
 // Mixins
-@mixin flexbox {
-	display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
-	display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
-	display: -ms-flexbox;      /* TWEENER - IE 10 */
-	display: -webkit-flex;     /* NEW - Chrome */
-	display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
-}
-
-@mixin share-icons {
-	width: 35px;
-	height: 35px;
-	line-height: 38px;
-	font-size: 20px;
-	color: white;
-}
-
 @mixin award-images {
 	display: block;
 	background-position: center;
@@ -83,7 +59,7 @@ header {
 	z-index: 1;
 
 	&.grammys-header {
-		background-color: $header-black;
+		background-color: $grammys-header-black;
 	}
 
 	.header-inner { // width of container for each screen size
@@ -276,7 +252,6 @@ header {
 		position: absolute;
 		top: -4px;
 		left: 2px;
-		// color: $header-black;
 		color: white;
 	}
 }
