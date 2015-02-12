@@ -1,93 +1,19 @@
-.text-align-left, .text-align-right {
-  @media screen and (min-width: 981px) {
-    display: block;
-    position: absolute;
-    width: 45%;
-    top: 50%;
-    transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
+// Layout
+
+//Clearfix
+@mixin clearfix {
+    &:after {
+    content: "";
+    display: table;
+    clear: both;
   }
 }
 
-.text-align-right,
-.image-align-right {
-  @media screen and (min-width: 981px) {
-    float: right;
-  }
-}
-
-.text-align-left,
-.image-align-left {
-  @media screen and (min-width: 981px) {
-    float: left;
-  }
-}
-
-.market-section {
-  padding: 0;
-  margin-top: -20px;
-  img {
-    @media screen and (max-width: 980px) {
-      margin-top: -30px;
-    }
-  }
-
-  @media screen and (max-width: 980px) {
-    margin-top: -30px;
-  }
-}
-
-.contact-section {
-  padding: 10px 0;
-
-  @media screen and (max-width: 980px) {
-    margin-top: -20px;
-  }
-}
-
-hr.section-divider {
-  @media screen and (max-width: 980px) {
-    display: block !important;
-  }
-}
-
-img.powered-by-img  {
-  @media screen and (max-width: 980px) {
-    padding: 0;
-    margin: 0;
-    margin-top: -40px;
-  }
-}
-
-// Article Posts
-body.single-post {
-  article.post {
-    position: relative;
-    top: 80px;
-    h1, p.post-meta {
-      width: 75%;
-      @media screen and (max-width: 980px) {
-        width: 60%;
-      }
-      @media screen and (max-width: 767px) {
-        width: 100%;
-      }
-    }
-  }
-  .et_pb_post .entry-content {
-    padding-top: 0;
-  }
-  .share-icons {
-    position: relative;
-    top: -80px;
-    @media screen and (max-width: 980px) {
-      top: -110px;
-    }
-    @media screen and (max-width: 767px) {
-      position: fixed;
-      width: 100%;
-      bottom: -23px;
-      top: initial;
-    }
-  }
+// Flexbox
+@mixin flexbox {
+	display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+	display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+	display: -ms-flexbox;      /* TWEENER - IE 10 */
+	display: -webkit-flex;     /* NEW - Chrome */
+	display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
 }

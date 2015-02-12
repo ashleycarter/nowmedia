@@ -5,11 +5,18 @@
 @import "components/partials/variables";
 @import "components/partials/mixins";
 
+@import "components/partials/typography";
+
 // Modules
+@import "components/modules/share-icons";
+@import "components/modules/chart";
+
 @import "components/modules/header";
 @import "components/modules/hero";
+@import "components/modules/articles";
 @import "components/modules/contact";
 @import "components/modules/footer";
 
 // Specialty Pages
+@import "components/specialty/homepage";
 @import "components/specialty/grammys";

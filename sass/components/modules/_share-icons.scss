@@ -1,0 +1,70 @@
+.favorite-icon i {
+	background-color: $favorite-color;
+
+	&:before {
+		font-family: FontAwesome;
+		content: "\f006";
+	}
+}
+
+.favorite-icon i.favorited {
+	&:before {
+		font-family: FontAwesome;
+		content: "\f005";
+	}
+}
+
+.facebook-icon i { background-color: $facebook-color; }
+.twitter-icon i { background-color: $twitter-color; }
+.google-plus-icon i { background-color: $google-plus-color; }
+.email-icon i { background-color: $email-color; }
+
+// Share Icons
+.share-icons { 
+	float: right;
+	@include flexbox;
+
+	li {
+		display: inline-block;
+		width: 50px;
+		text-align: center;
+
+		@media screen and (max-width: 767px) {
+			width: 25%;
+		}
+
+		a {
+			color: white;
+		}
+
+		i {
+			@include share-icons;
+			width: 100%;
+		}
+	}
+
+	@media screen and (max-width: 767px) {
+		width: 100%;
+		position: fixed;
+		bottom: -23px;
+		left: -16px;
+		z-index: 1;
+	}
+}
+
+// 
+body.single-post {
+  .share-icons {
+    position: relative;
+    top: -80px;
+    @media screen and (max-width: 980px) {
+      top: -110px;
+    }
+    @media screen and (max-width: 767px) {
+      position: fixed;
+      width: 100%;
+      bottom: -23px;
+      top: initial;
+    }
+  }
+}

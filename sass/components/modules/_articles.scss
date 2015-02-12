@@ -1,0 +1,19 @@
+// Article Posts
+body.single-post {
+  article.post {
+    position: relative;
+    top: 80px;
+    h1, p.post-meta {
+      width: 75%;
+      @media screen and (max-width: 980px) {
+        width: 60%;
+      }
+      @media screen and (max-width: 767px) {
+        width: 100%;
+      }
+    }
+  }
+  .et_pb_post .entry-content {
+    padding-top: 0;
+  }
+}
