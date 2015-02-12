@@ -19,6 +19,10 @@ $grammys-gold         : #ddb374;
 #left-area article {
 	@include clearfix;
 	margin-bottom: 20%;
+	margin-right: 200px;
+	@media only screen and (max-width: 980px) { 
+		margin-right: 0;
+	}
 }
 
 // Typography
@@ -42,6 +46,11 @@ $grammys-gold         : #ddb374;
 	&:hover {
 		color: darken($grammys-gold, 20%);
 	}
+}
+
+// Chart
+#grammy-chart {
+	clear: left;
 }
 
 // Header Section
@@ -341,6 +350,9 @@ header {
 		line-height: 36px;
 		font-weight: lighter;
 		padding: 0;
+		@media screen and (max-width: 767px) {
+			font-size: 14px;
+		}
 	}
 
 	.award-recipient {

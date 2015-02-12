@@ -223,11 +223,15 @@ footer div#footer-bottom .social-media-icons i:hover {
   margin-top: 50px; }
 
 #left-area article {
-  margin-bottom: 20%; }
+  margin-bottom: 20%;
+  margin-right: 200px; }
   #left-area article:after {
     content: "";
     display: table;
     clear: both; }
+  @media only screen and (max-width: 980px) {
+    #left-area article {
+      margin-right: 0; } }
 
 .annotation {
   clear: both;
@@ -244,6 +248,9 @@ footer div#footer-bottom .social-media-icons i:hover {
   -webkit-transition: color 0.3s; }
   .grammys-link:hover {
     color: #bd842e; }
+
+#grammy-chart {
+  clear: left; }
 
 .main_title {
   display: none; }
@@ -482,6 +489,9 @@ header {
   line-height: 36px;
   font-weight: lighter;
   padding: 0; }
+  @media screen and (max-width: 767px) {
+    .awards .award-name {
+      font-size: 14px; } }
 .awards .award-recipient {
   font-size: 32px;
   line-height: 40px;
