@@ -1,11 +1,15 @@
-@import "variables";
-@import "mixins";
+// Global
+@import "components/layout";
 
-@import "header";
-@import "hero";
-@import "layout";
-@import "contact";
-@import "footer";
+// Partials
+@import "components/partials/variables";
+@import "components/partials/mixins";
+
+// Modules
+@import "components/modules/header";
+@import "components/modules/hero";
+@import "components/modules/contact";
+@import "components/modules/footer";
 
 // Specialty Pages
-@import "grammys";
+@import "components/specialty/grammys";
