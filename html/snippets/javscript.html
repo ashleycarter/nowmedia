@@ -1,0 +1,24 @@
+<!-- Javascript Snippets for HTML documents -->
+
+<!-- Reveal Filter List -->
+<script type="text/javascript">
+jQuery(function($) {
+  $('.reveal-button').click(function() {
+  	$('.list').slideToggle;
+  	$(this).toggleClass('active');
+  });
+});
+</script>
+
+<!-- Hide Header on Scroll -->
+<script type="text/javascript">
+jQuery(window).scroll(function($) {
+	var scroll = jQuery(window).scrollTop();
+	var header = jQuery('header');
+	if (scroll >= 200) {
+		header.slideUp();
+	} else {
+		header.slideDown();
+	}
+});
+</script>
