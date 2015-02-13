@@ -6,6 +6,65 @@
   padding-top: 15px;
   border-top: 1px solid #cccccc; }
 
+.et_fixed_nav #page-container {
+  padding-top: 0px; }
+
+@media screen and (max-width: 767px) {
+  .hero-image div.mejs-container {
+    display: none; } }
+
+@media screen and (max-width: 767px) {
+  .hero-image {
+    background-image: url('http://staging.niomedia.com/wp-content/uploads/2015/01/static-mobile-hero.jpg') !important; } }
+
+.main_title {
+  display: none; }
+
+header {
+  width: 100%;
+  left: 0;
+  right: 0;
+  height: 110px;
+  position: fixed;
+  top: 0;
+  z-index: 1; }
+  header .header-inner {
+    width: 1080px;
+    position: relative;
+    margin: 0 auto; }
+    @media only screen and (max-width: 1100px) and (min-width: 981px) {
+      header .header-inner {
+        width: 960px; } }
+    @media screen and (max-width: 980px) {
+      header .header-inner {
+        width: 690px; } }
+    @media screen and (max-width: 767px) {
+      header .header-inner {
+        width: 400px; } }
+    @media screen and (max-width: 479px) {
+      header .header-inner {
+        width: 280px; } }
+  header .logo {
+    background-image: url('http://niomedia.com/wp-content/uploads/2015/02/now-grammys-logo.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 405px;
+    height: 100px; }
+    @media screen and (max-width: 767px) {
+      header .logo {
+        width: 100%;
+        background-size: contain; } }
+
+.inner {
+  position: relative;
+  top: 80px; }
+
+.intro h1 {
+  float: left;
+  margin: 10px 0 20px; }
+.intro p {
+  clear: both; }
+
 .favorite-icon i {
   background-color: #F7931D; }
   .favorite-icon i:before {
@@ -151,65 +210,6 @@ body.single-post .share-icons {
   width: 150px;
   white-space: normal !important;
   overflow: auto; }
-
-.et_fixed_nav #page-container {
-  padding-top: 0px; }
-
-@media screen and (max-width: 767px) {
-  .hero-image div.mejs-container {
-    display: none; } }
-
-@media screen and (max-width: 767px) {
-  .hero-image {
-    background-image: url('http://staging.niomedia.com/wp-content/uploads/2015/01/static-mobile-hero.jpg') !important; } }
-
-.main_title {
-  display: none; }
-
-header {
-  width: 100%;
-  left: 0;
-  right: 0;
-  height: 110px;
-  position: fixed;
-  top: 0;
-  z-index: 1; }
-  header .header-inner {
-    width: 1080px;
-    position: relative;
-    margin: 0 auto; }
-    @media only screen and (max-width: 1100px) and (min-width: 981px) {
-      header .header-inner {
-        width: 960px; } }
-    @media screen and (max-width: 980px) {
-      header .header-inner {
-        width: 690px; } }
-    @media screen and (max-width: 767px) {
-      header .header-inner {
-        width: 400px; } }
-    @media screen and (max-width: 479px) {
-      header .header-inner {
-        width: 280px; } }
-  header .logo {
-    background-image: url('http://niomedia.com/wp-content/uploads/2015/02/now-grammys-logo.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 405px;
-    height: 100px; }
-    @media screen and (max-width: 767px) {
-      header .logo {
-        width: 100%;
-        background-size: contain; } }
-
-.inner {
-  position: relative;
-  top: 80px; }
-
-.intro h1 {
-  float: left;
-  margin: 10px 0 20px; }
-.intro p {
-  clear: both; }
 
 div.et_pb_section_video_bg {
   opacity: 0.6; }

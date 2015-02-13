@@ -8,13 +8,13 @@
 @import "components/partials/typography";
 
 // Modules
+@import "components/modules/header"; // Includes styles for home & specialty pages
 @import "components/modules/share-icons";
 @import "components/modules/chart";
 
-@import "components/modules/header";
-@import "components/modules/hero";
-@import "components/modules/articles";
-@import "components/modules/contact";
+@import "components/modules/hero"; // Home page
+@import "components/modules/articles"; // Blog posts
+@import "components/modules/contact"; // Home page contact form
 @import "components/modules/footer";
 
 // Specialty Pages
