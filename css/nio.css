@@ -55,6 +55,9 @@ header {
         width: 100%;
         background-size: contain; } }
 
+header.et-fixed-header .container {
+  top: 10px; }
+
 .inner {
   position: relative;
   top: 80px; }
@@ -365,6 +368,17 @@ footer div#footer-bottom .social-media-icons i:hover {
   -webkit-transition-duration: 0.5s;
   transition-property: background-color, color, border;
   -webkit-transition-property: background-color, color, border; }
+
+.home div#page-container[style] {
+  padding-top: 80px !important; }
+.home header {
+  height: 65px; }
+  .home header #logo {
+    position: relative;
+    max-height: 55px; }
+  .home header.et-fixed-header #logo {
+    top: -5px;
+    max-height: 45px; }
 
 @media screen and (min-width: 981px) {
   .text-align-left, .text-align-right {

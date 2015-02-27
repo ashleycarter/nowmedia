@@ -1,3 +1,23 @@
+.home {
+  div#page-container[style] {
+    padding-top: 80px !important;
+  }
+
+  header {
+    height: 65px;
+
+    #logo {
+      position: relative;
+      max-height: 55px;
+    }
+
+    &.et-fixed-header #logo {
+      top: -5px;
+      max-height: 45px;
+    }
+  }
+}
+
 // niomedia home page
 .text-align-left, .text-align-right {
   @media screen and (min-width: 981px) {

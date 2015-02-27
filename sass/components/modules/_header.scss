@@ -53,6 +53,13 @@ header {
 	}
 }
 
+// Sticky header
+header.et-fixed-header {
+	.container {
+		top: 10px;
+	}
+}
+
 // Intro Section
 .inner {
 	// @include clearfix;
