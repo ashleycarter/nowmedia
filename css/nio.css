@@ -369,14 +369,14 @@ footer div#footer-bottom .social-media-icons i:hover {
   transition-property: background-color, color, border;
   -webkit-transition-property: background-color, color, border; }
 
-.home div#page-container[style] {
+.home div#page-container[style], .page-template-default div#page-container[style] {
   padding-top: 80px !important; }
-.home header {
+.home header, .page-template-default header {
   height: 65px; }
-  .home header #logo {
+  .home header #logo, .page-template-default header #logo {
     position: relative;
     max-height: 55px; }
-  .home header.et-fixed-header #logo {
+  .home header.et-fixed-header #logo, .page-template-default header.et-fixed-header #logo {
     top: -5px;
     max-height: 45px; }
 
